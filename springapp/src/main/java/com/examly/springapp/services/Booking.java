@@ -1,14 +1,24 @@
-package com.examly.springapp.services;
+// package com.examly.springapp.services;
 
-import org.springframework.stereotype.Service;
+// import org.springframework.stereotype.Service;
 
-@Service
+// @Service
+// public class Booking{
+//     //	Enter code here...
+//     public double booking(int noOfPersons, int rates){
+//         double totalRate;
+//         totalRate = noOfPersons * rates;
+//         return totalRate;
+//     }
+// }
+
+package services;
+
 public class Booking{
-    //	Enter code here...
+//	Enter code here...
     public double booking(int noOfPersons, int rates){
         double totalRate;
         totalRate = noOfPersons * rates;
         return totalRate;
     }
 }
-
