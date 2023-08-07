@@ -15,16 +15,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.examly.springapp.services.Booking;
+import com.examly.springapp.services.FareCalculator;
+import com.examly.springapp.model.Hotel;
+
+
 @WebServlet(urlPatterns={"/jspservlet-app-binarytravels/hotel"})
 public class HotelServlet extends HttpServlet {
-    @Autowired
-    private Booking book;
+    // @Autowired
+    // private Booking book;
 
-    @Autowired
-    private FareCalculator fare;
+    // @Autowired
+    // private FareCalculator fare;
 
-    @Autowired
-    private com.examly.springapp.model.Hotel Hotel;
+    // @Autowired
+    // private com.examly.springapp.model.Hotel Hotel;
+
+    
 
     private static final long serialVersionUID = 1L;
     public HotelServlet() {
