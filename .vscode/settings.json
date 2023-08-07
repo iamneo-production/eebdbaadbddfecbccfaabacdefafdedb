@@ -1,12 +1,6 @@
 {
-    // "cSpell.words": [
-    //     "examly",
-    //     "springapp"
-    // ]
-    {
-        "java.project.sourcePaths": [
-            "src/main/java"
-        ]
-    }
-    
+    "cSpell.words": [
+        "examly",
+        "springapp"
+    ]
 }
