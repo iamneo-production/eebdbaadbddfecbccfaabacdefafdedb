@@ -6,10 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-//@ExtendWith(SpringExtension.class) 
-@AutoConfigureMockMVC
-@SpringBootTest(classes=TestTrain.class)
-@TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestTrain {
     LocalDate ld = LocalDate.of(2020, 02, 03);
 

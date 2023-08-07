@@ -6,10 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-//@ExtendWith(SpringExtension.class) 
-@AutoConfigureMockMVC
-@SpringBootTest(classes=TestHotel.class)
-@TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestHotel {
 
     @Autowired

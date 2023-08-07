@@ -5,16 +5,8 @@ import static org.junit.Assert.*;
 import com.examly.springapp.services.Booking;
 import org.junit.Test;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-
 import org.springframework.beans.factory.annotation.Autowired;
-//@ExtendWith(SpringExtension.class) 
-@AutoConfigureMockMVC
-@SpringBootTest(classes = {TestBooking.class})
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class TestBooking {
 
     @Autowired

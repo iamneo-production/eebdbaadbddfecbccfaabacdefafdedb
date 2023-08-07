@@ -6,16 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-
-
-//@ExtendWith(SpringExtension.class) 
-@AutoConfigureMockMVC
-@SpringBootTest(classes = TestFlight.class)
-@TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestFlight {
     LocalDate ld = LocalDate.of(2020, 02, 03);
     LocalDate ld1 = LocalDate.of(2020, 02, 05);
