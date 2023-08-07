@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@ExtendWith(SpringExtension.class) 
-@SpringBootTest
+//@ExtendWith(SpringExtension.class) 
+@SpringBootTest(webEnvironment = SpringBootTest.)
 public class TestTrain {
     LocalDate ld = LocalDate.of(2020, 02, 03);
 

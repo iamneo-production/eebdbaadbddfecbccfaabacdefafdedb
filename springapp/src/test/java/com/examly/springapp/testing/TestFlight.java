@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@ExtendWith(SpringExtension.class) 
+//@ExtendWith(SpringExtension.class) 
 @SpringBootTest
 public class TestFlight {
     LocalDate ld = LocalDate.of(2020, 02, 03);

@@ -6,7 +6,7 @@ import com.examly.springapp.services.Booking;
 import org.junit.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
-@ExtendWith(SpringExtension.class) 
+//@ExtendWith(SpringExtension.class) 
 @SpringBootTest
 public class TestBooking {
 
