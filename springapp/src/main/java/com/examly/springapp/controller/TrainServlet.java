@@ -15,6 +15,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.examly.springapp.services.Booking;
+import com.examly.springapp.services.FareCalculator;
+import com.examly.springapp.model.Train;
+
+
 
 
 /**
@@ -23,14 +28,18 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/jspservlet-app-binarytravels/train")
 public class TrainServlet extends HttpServlet {
 
-    @Autowired
-    private Booking book;
+    // @Autowired
+    // private Booking book;
 
-    @Autowired
-    private FareCalculator fare;
+    // @Autowired
+    // private FareCalculator fare;
 
-    @Autowired
-    private com.examly.springapp.model.Train Train;
+    // @Autowired
+    // private com.examly.springapp.model.Train Train;
+
+    private Booking book = new Booking(); 
+    private FareCalculator fare = new FareCalculator(); 
+    private Train train = new Train();
 
     private static final long serialVersionUID = 1L;
 

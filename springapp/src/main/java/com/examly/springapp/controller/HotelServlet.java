@@ -31,7 +31,9 @@ public class HotelServlet extends HttpServlet {
     // @Autowired
     // private com.examly.springapp.model.Hotel Hotel;
 
-    
+    private Booking book = new Booking();
+    private FareCalculator fare = new FareCalculator(); 
+    private Hotel hotel = new Hotel();
 
     private static final long serialVersionUID = 1L;
     public HotelServlet() {
