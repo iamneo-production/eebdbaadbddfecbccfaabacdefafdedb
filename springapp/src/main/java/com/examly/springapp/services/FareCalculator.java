@@ -24,7 +24,7 @@ public class FareCalculator extends Booking{
     public double book(Flight flight) {
 
         double totalFare = booking(flight.getNoOfPersons(),flight.getRates());
-
+    
         if(flight.getTriptype().equalsIgnoreCase("one-way")){
             return totalFare;
         }else{
