@@ -1,6 +1,5 @@
 package testing;
 
-
 import model.Hotel;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
