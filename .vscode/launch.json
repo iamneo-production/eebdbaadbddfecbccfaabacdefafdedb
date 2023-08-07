@@ -10,10 +10,8 @@
             "name": "Debug (Launch)",
             "request": "launch",
             "mainClass": "com.example.SpringappApplication",
-            "classPaths": [
-                "/path/to/dependency1.jar",
-                "/path/to/dependency2.jar"
-            ]
+            
+        
         }
     ]
 }
