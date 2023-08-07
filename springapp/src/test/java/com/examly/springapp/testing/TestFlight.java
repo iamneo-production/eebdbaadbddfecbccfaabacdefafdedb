@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 //@ExtendWith(SpringExtension.class) 
 @AutoConfigureMockMVC
-@SpringBootTest(webEnvironment = SpringBootTest.webEnvironment.MOCK)
+@SpringBootTest(classes = TestFlight.class)
 @TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestFlight {
     LocalDate ld = LocalDate.of(2020, 02, 03);

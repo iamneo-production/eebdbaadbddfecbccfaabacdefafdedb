@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 //@ExtendWith(SpringExtension.class) 
 @AutoConfigureMockMVC
-@SpringBootTest(webEnvironment = SpringBootTest.webEnvironment.MOCK)
+@SpringBootTest(classes=TestHotel.class)
 @TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestHotel {
 
