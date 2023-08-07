@@ -14,7 +14,9 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 //@ExtendWith(SpringExtension.class) 
-@SpringBootTest
+@AutoConfigureMockMVC
+@SpringBootTest(webEnvironment = SpringBootTest.webEnvironment.MOCK)
+@TestMethodOrder(TestMethodOrderer.OrderAnnotation.class)
 public class TestFareCalculator {
 
     @Autowired
