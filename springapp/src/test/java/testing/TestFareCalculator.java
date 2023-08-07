@@ -1,34 +1,27 @@
-package com.examly.springapp.testing;
+package testing;
 
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
 
-import com.examly.springapp.model.Bus;
-import com.examly.springapp.model.Flight;
-import com.examly.springapp.model.Hotel;
-import com.examly.springapp.model.Train;
-import com.examly.springapp.services.FareCalculator;
+import model.Bus;
+import model.Flight;
+import model.Hotel;
+import model.Train;
+import services.FareCalculator;
 import org.junit.Test;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestFareCalculator {
 
-    @Autowired
-    private Bus bus;
+    Bus bus = new Bus();
 
-    @Autowired
-    private Flight flight;
+    Flight flight = new Flight();
 
-    @Autowired
-    private Hotel hotel;
+    Hotel hotel = new hotel();
 
-    @Autowired
-    private Train train;
+    Train train = new Train();
 
-    @Autowired
-    private FareCalculator fare;
+    FareCalculator fare = new FareCalculator();
 
     @Test
     public void testBook() {

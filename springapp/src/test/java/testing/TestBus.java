@@ -1,16 +1,14 @@
-package com.examly.springapp.testing;
+package testing;
 
-import com.examly.springapp.model.Bus;
+import model.Bus;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestBus {
     LocalDate ld = LocalDate.of(2020, 02, 03);
 
-    @Autowired
-    private Bus bus = new Bus(2, "acsleeper", 1500, ld);
+    Bus bus = new Bus(2, "acsleeper", 1500, ld);
 
     @Test
     public void testGetNoOfPersonMethod() {

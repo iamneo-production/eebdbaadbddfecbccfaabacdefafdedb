@@ -1,16 +1,14 @@
-package com.examly.springapp.testing;
+package testing;
 
-import com.examly.springapp.model.Train;
+import model.Train;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestTrain {
     LocalDate ld = LocalDate.of(2020, 02, 03);
 
-    @Autowired
-    private Train train = new Train(2,"nonac",1500,ld);
+    Train train = new Train(2,"nonac",1500,ld);
 
     @Test
     public void testGetNoOfPersonMethod() {

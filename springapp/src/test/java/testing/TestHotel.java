@@ -1,15 +1,13 @@
-package com.examly.springapp.testing;
+package testing;
 
-import com.examly.springapp.model.Hotel;
+import .model.Hotel;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestHotel {
 
-    @Autowired
-    private Hotel hotel;
+    Hotel hotel = new Hotel();
     LocalDate ld1 = LocalDate.of(2020, 02, 03);
     LocalDate ld2 = LocalDate.of(2020, 02, 07);
     Hotel hotel1 = new Hotel(2, "nonac", 20000, "single", ld1, ld2);

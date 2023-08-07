@@ -1,20 +1,16 @@
-package com.examly.springapp.testing;
+package testing;
 
 import static org.junit.Assert.*;
 
-import com.examly.springapp.services.Booking;
+import services.Booking;
 import org.junit.Test;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class TestBooking {
 
-    @Autowired
-    private Booking book;
+    Booking book = new Booking();
 
     @Test
     public void testBookingMethod() {
-
         assertEquals(6000, book.booking(2, 3000),0);
         assertEquals(1000, book.booking(1, 1000),0);
         try {
