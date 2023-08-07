@@ -21,37 +21,50 @@ public class FareCalculator extends Booking{
     @Autowired
     private Flight flight;
 
-    public double book(Flight flight) {
+    // public double book(Flight flight) {
 
-        double totalFare = booking(flight.getNoOfPersons(),flight.getRates());
+    //     double totalFare = booking(flight.getNoOfPersons(),flight.getRates());
     
-        if(flight.getTriptype().equalsIgnoreCase("one-way")){
-            return totalFare;
-        }else{
-            int comp = (flight.getFrom()).compareTo(flight.getTo());
-            if(comp < 0)
-                return 2 * totalFare;
-            else
-                return 0;
-        }
-    }
+    //     if(flight.getTriptype().equalsIgnoreCase("one-way")){
+    //         return totalFare;
+    //     }else{
+    //         int comp = (flight.getFrom()).compareTo(flight.getTo());
+    //         if(comp < 0)
+    //             return 2 * totalFare;
+    //         else
+    //             return 0;
+    //     }
+    // }
 
-    public double book(Bus bus) {
-        double totalFare = booking(bus.getNoOfPersons(),bus.getRates());
-        return totalFare;
-    }
+    // public double book(Bus bus) {
+    //     double totalFare = booking(bus.getNoOfPersons(),bus.getRates());
+    //     return totalFare;
+    // }
 
-    public double book(Hotel hotel) {
-        double totalFare = 0;
-        if(hotel.getFromdate().isBefore(hotel.getTodate())){
-            totalFare = booking(hotel.getNoOfPersons(), hotel.getRates());
-        }
-        return totalFare;
-    }
+    // public double book(Hotel hotel) {
+    //     double totalFare = 0;
+    //     if(hotel.getFromdate().isBefore(hotel.getTodate())){
+    //         totalFare = booking(hotel.getNoOfPersons(), hotel.getRates());
+    //     }
+    //     return totalFare;
+    // }
 
-    public double book(Train train) {
-        double totalFare = booking(train.getNoOfPersons(),train.getRates());
-        return totalFare;
-    }
+    // public double book(Train train) {
+    //     double totalFare = booking(train.getNoOfPersons(),train.getRates());
+    //     return totalFare;
+    // }
 
+
+    @Test
+    public void testBookFlightOneWay() {
+        FareCalculator fareCalculator = new FareCalculator();
+        
+        Flight mockFlight = mock(Flight.class);
+        when(mockFlight.getNoOfPersons()).thenReturn(2);
+        when(mockFlight.getRates()).thenReturn(3000);
+        when(mockFlight.getTriptype()).thenReturn("one-way");
+
+        double result = fareCalculator.book(mockFlight);
+        assertEquals(6000, result, 0);
+    }
 }
