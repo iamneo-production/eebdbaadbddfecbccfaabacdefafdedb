@@ -1,0 +1,7 @@
+testing/TestBus.class
+testing/TestHotel.class
+com/examly/springapp/SpringApplicationTests.class
+testing/TestBooking.class
+testing/TestFlight.class
+testing/TestTrain.class
+testing/TestFareCalculator.class
