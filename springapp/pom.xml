@@ -56,6 +56,15 @@
            <groupId>org.mockito</groupId>
            <artifactId>mockito-core</artifactId>
         </dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+		<dependency>
+    		<groupId>org.apache.tomcat.maven</groupId>
+    		<artifactId>tomcat7-maven-plugin</artifactId>
+    		<version>2.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -67,15 +76,7 @@
 		</plugins>
 	</build>
 
-	<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>...</version> 
-        </plugin>
-    </plugins>
-</build>
+
 
 
 </project>
